@@ -1,0 +1,29 @@
+.range-button {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.control-point {
+    background-color:black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.control-point-max {
+    position: absolute;
+    left: 150px; 
+}
+
+.control-point-min {
+    position: absolute;
+    left: 10px;
+  
+}
+
+.control-line {
+    position: absolute;
+    top: 7px;
+    height: 10px;
+}

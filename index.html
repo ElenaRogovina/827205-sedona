@@ -43,15 +43,15 @@
                         </div>
                         <ul class="advice-list">
                             <li class="advice-item">
-                                <h3>Жилье</h3>
+                                <h4>Жилье</h4>
                                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                             </li>
                             <li class="advice-item">
-                                <h3>Еда</h3>
+                                <h4>Еда</h4>
                                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                             </li>
                             <li class="advice-item">
-                                <h3>Сувениры</h3>
+                                <h4>Сувениры</h4>
                                 <p>Не только китайского, но и местного производства!</p>
                             </li>
                         </ul>
@@ -84,20 +84,42 @@
             <section class="hotels-search">
                 <h2>Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <a class="button" href="#">Поиск гостиницы В Седоне</a>
+                <button class="button" type="button">Поиск гостиницы В Седоне</button>
             </section>
             <section class="content-form">
-                <div class="content-form-text">
-                    <!-- Здесь будет форма -->
-                </div>
-                <div >
-                    <h2>
-                        <a class="button" href="#">Найти</a>
-                    </h2>
-                </div>
+                <form class="content-form-text" action="https://echo.htmlacademy.ru" method="get">
+                    <p>
+                        <label for="arrival-date">ДАТА ЗАЕЗДА:</label>
+                        <input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
+                        <img src="img/svg/calendar.svg">
+                    </p>
+                    <p>
+                        <label for="date-of-departure">ДАТА ВЫЕЗДА:</label>
+                        <input id="date-of-departure" type="text" name="date" placeholder="4 июля 2017">
+                        <img src="img/svg/calendar.svg">
+                    </p>
+                    <div>
+                        <p>
+                            <label for="adults">взрослые:</label>
+                            <button class="btn-down" type="button" >-</button>
+                            <input id="adults" type="number" min="0" max="999" value="2">
+                            <button class="btn-up" type="button">+</button>
+                        </p>
+                        <p>
+                            <label for="children">дети:</label>
+                            <button class="btn-down" type="button">-</button>
+                            <input id="children" type="number"  min="0" max="999" value="0">
+                            <button class="btn-up" type="button">+</button>
+                        </p>
+                    </div>
+                    <button class="button" type="submit">найти</button>
+                </form>
             </section>
             <section class="map">
-                <a href="map.html"></a>
+                <h2 class="visually-hidden">Седона на карте</h2>
+                <p>
+                    <img src="img/map.jpg" width="1202" height="475" alt="Седона на карте">
+                </p>
             </section>
         </main>
         <footer class="page-footer">
